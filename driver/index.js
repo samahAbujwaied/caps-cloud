@@ -20,6 +20,8 @@ const params = {
 
 sns.publish(params).promise().then(data=> {
     console.log(data)
+}).then((resp)=>{
+console.log('Your order has been send');
 }).catch(err=> {
     console.log(err)
 });
